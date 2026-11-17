@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Consultoria individual · Renan Vieira</title>
+<meta name="description" content="Consultoria individual com o personal trainer Renan Vieira: treino presencial 2x ou 3x por semana, em programas de 90 ou 180 dias. Zona Norte, Gaviões da Cachoeirinha.">
+<meta name="theme-color" content="#060a14">
+<link rel="canonical" href="https://renanvieirapersonal.com.br/consultoria/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Consultoria individual · Renan Vieira">
+<meta property="og:description" content="Treino presencial 2x ou 3x por semana, em programas de 90 ou 180 dias.">
+<meta property="og:image" content="https://renanvieirapersonal.com.br/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;0,700;1,800;1,900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#060a14; --bg2:#0d1a36; --ink:#f2f5ff; --muted:#a9b4cc;
+  --azul:#2f7fe6; --azul2:#5b9cff; --azul-luz:#a9c8ff; --line:rgba(91,156,255,.3);
+  --tit:"Archivo",system-ui,sans-serif; --txt:"Inter",system-ui,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(90% 45% at 50% 0%,#12306b 0%,transparent 70%),linear-gradient(180deg,var(--bg2) 0%,#0a1224 30%,var(--bg) 60%) fixed;color:var(--ink);font-family:var(--txt);font-size:15px;
+  padding:28px max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px));overflow-x:hidden;-webkit-font-smoothing:antialiased}
+#ceu{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+main{position:relative;z-index:1;max-width:720px;margin:0 auto}
+.topo{display:flex;align-items:center;justify-content:space-between;margin-bottom:34px}
+.topo img{height:40px;width:auto}
+.voltar{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-decoration:none;display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border:1px solid var(--line);border-radius:999px;background:rgba(10,18,40,.55)}
+.voltar:hover{color:var(--azul-luz);border-color:var(--azul2)}
+
+.cab{text-align:center;margin-bottom:30px}
+.rot{display:inline-flex;align-items:center;gap:12px;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--azul-luz);font-weight:600}
+.rot::before,.rot::after{content:"";width:26px;height:1px;background:linear-gradient(90deg,transparent,var(--azul2))}
+.rot::after{transform:scaleX(-1)}
+h1{font-family:var(--tit);font-style:italic;font-weight:900;text-transform:uppercase;font-size:clamp(36px,8.4vw,64px);line-height:.98;letter-spacing:-.01em;margin:14px 0 14px}
+h1 span{color:transparent;background:linear-gradient(100deg,#5b9cff,#ffffff 70%);-webkit-background-clip:text;background-clip:text}
+.cab p{color:var(--muted);font-size:16px;line-height:1.6;max-width:46ch;margin:0 auto}
+
+.inclui{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:22px 0 34px}
+.inclui span{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#d6e2ff;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:rgba(10,18,40,.55)}
+.inclui span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--azul2);box-shadow:0 0 8px var(--azul2)}
+
+.chave{position:relative;display:grid;grid-template-columns:1fr 1fr;width:min(100%,360px);margin:0 auto 24px;padding:5px;border-radius:999px;border:1px solid var(--line);background:rgba(10,18,40,.7)}
+.chave button{position:relative;z-index:1;border:0;background:none;color:var(--muted);font:700 13px/1 var(--txt);letter-spacing:.14em;text-transform:uppercase;padding:13px 0;border-radius:999px;cursor:pointer;transition:color .3s}
+.chave button[aria-pressed="true"]{color:#fff}
+.chave i{position:absolute;top:5px;bottom:5px;left:5px;width:calc(50% - 5px);border-radius:999px;background:linear-gradient(135deg,#2f7fe6,#1746b8);box-shadow:0 8px 24px -8px rgba(47,127,230,.8);transition:transform .45s cubic-bezier(.2,.9,.2,1)}
+.chave.d180 i{transform:translateX(100%)}
+
+.planos{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.plano{position:relative;overflow:hidden;border-radius:24px;padding:28px 26px 24px;background:linear-gradient(160deg,rgba(255,255,255,.07),rgba(255,255,255,.015));border:1px solid rgba(255,255,255,.1);box-shadow:0 30px 70px -40px #000,inset 0 1px 0 rgba(255,255,255,.08)}
+.plano.top{border-color:rgba(91,156,255,.7);box-shadow:0 0 0 1px rgba(91,156,255,.35) inset,0 30px 80px -30px rgba(47,127,230,.55)}
+.plano::before{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.08),transparent);transform:skewX(-18deg);animation:reflexo 7s ease-in-out infinite}
+@keyframes reflexo{0%,70%{left:-60%}100%{left:150%}}
+.selo{display:inline-block;margin-bottom:14px;font:700 10px/1 var(--txt);letter-spacing:.22em;padding:7px 11px;border-radius:999px;background:linear-gradient(120deg,#2f7fe6,#5b9cff)}
+.freq{font-family:var(--tit);font-style:italic;font-weight:900;text-transform:uppercase;font-size:28px;line-height:1}
+.freq span{color:var(--azul2)}
+.aulas{margin-top:8px;font-size:13px;color:var(--muted);letter-spacing:.04em}
+.mensal{margin:24px 0 6px;display:flex;align-items:flex-start;gap:6px}
+.mensal em{font-style:normal;font-weight:700;color:var(--azul-luz);font-size:15px;margin-top:8px}
+.mensal b{font-family:var(--tit);font-style:italic;font-weight:900;font-size:clamp(44px,7vw,56px);line-height:1;letter-spacing:-.01em}
+.mensal small{align-self:flex-end;margin-bottom:6px;color:var(--muted);font-size:13px}
+.total{display:flex;justify-content:space-between;align-items:center;gap:10px;padding-top:16px;margin-top:16px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;color:var(--muted)}
+.total strong{color:#fff;font-size:16px;font-weight:600}
+.lista{list-style:none;margin:18px 0 0;display:grid;gap:9px}
+.lista li{display:flex;gap:10px;align-items:center;font-size:14px;color:#d3dbef}
+.lista li::before{content:"";flex:none;width:18px;height:18px;border-radius:50%;background:var(--azul) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center/11px no-repeat}
+.troca{transition:opacity .25s ease,transform .25s ease}
+.troca.sai{opacity:0;transform:translateY(6px)}
+.nota{text-align:center;color:#7d89a6;font-size:12.5px;margin-top:16px}
+
+.como{margin-top:46px}
+.como h2{text-align:center;font-family:var(--tit);font-style:italic;font-weight:900;text-transform:uppercase;font-size:clamp(24px,5vw,34px);margin:12px 0 22px}
+.passos{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.passo{padding:22px 20px;border-radius:20px;border:1px solid rgba(255,255,255,.09);background:rgba(10,18,40,.5)}
+.passo i{display:block;font:900 30px/1 var(--tit);font-style:italic;color:transparent;-webkit-text-stroke:1px var(--azul2);margin-bottom:12px}
+.passo b{display:block;font-family:var(--tit);font-style:italic;font-weight:800;text-transform:uppercase;font-size:16px;margin-bottom:6px}
+.passo span{font-size:13.5px;color:var(--muted);line-height:1.5}
+
+.cta{margin-top:40px;text-align:center;padding:34px 22px;border-radius:26px;background:linear-gradient(135deg,rgba(47,127,230,.22),rgba(23,70,184,.08));border:1px solid rgba(91,156,255,.4)}
+.cta h3{font-family:var(--tit);font-style:italic;font-weight:900;text-transform:uppercase;font-size:clamp(24px,5vw,32px);margin-bottom:8px}
+.cta p{color:var(--muted);margin-bottom:22px}
+.botao{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:14px;background:linear-gradient(135deg,#2f7fe6,#1746b8);color:#fff;text-decoration:none;font:700 15px/1 var(--txt);letter-spacing:.04em;box-shadow:0 14px 34px -12px rgba(47,127,230,.8);transition:transform .3s}
+.botao:hover{transform:translateY(-2px)}
+.outra{display:block;margin-top:16px;color:var(--azul-luz);font-size:13.5px;text-decoration:none}
+.outra:hover{text-decoration:underline}
+footer{margin-top:30px;text-align:center;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted)}
+
+.sobe{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s cubic-bezier(.16,1,.3,1)}
+.sobe.in{opacity:1;transform:none}
+@media (max-width:620px){
+  .planos,.passos{grid-template-columns:1fr}
+  .topo img{height:34px}
+}
+@media (prefers-reduced-motion:reduce){.plano::before{animation:none}.sobe{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<canvas id="ceu" aria-hidden="true"></canvas>
+<main>
+  <div class="topo">
+    <a href="/links/"><img src="/img/logo-rv.png" alt="Renan Vieira, personal trainer" width="900" height="722"></a>
+    <a class="voltar" href="/links/">← Links</a>
+  </div>
+
+  <section class="cab sobe">
+    <div class="rot">Personal trainer presencial</div>
+    <h1>Consultoria <span>individual</span></h1>
+    <p>Treino personalizado e acompanhado de perto, no seu ritmo, para emagrecer, ganhar massa ou viver com mais saúde.</p>
+  </section>
+
+  <div class="inclui sobe">
+    <span>Treino montado para você</span>
+    <span>Aulas presenciais</span>
+    <span>Acompanhamento em todo o período</span>
+  </div>
+
+  <div class="chave sobe" id="chave" role="group" aria-label="Escolha a duração do programa">
+    <i></i>
+    <button type="button" data-d="90" aria-pressed="true">90 dias</button>
+    <button type="button" data-d="180" aria-pressed="false">180 dias</button>
+  </div>
+
+  <div class="planos">
+    <article class="plano sobe">
+      <div class="freq">2x <span>por semana</span></div>
+      <div class="aulas troca" data-v="aulas2"></div>
+      <div class="mensal"><em>R$</em><b>699,90</b><small>/mês</small></div>
+      <div class="total troca"><span data-v="parc2"></span><strong data-v="tot2"></strong></div>
+      <ul class="lista"><li>Treino personalizado</li><li>Aulas presenciais</li><li>Acompanhamento do Renan</li></ul>
+    </article>
+    <article class="plano top sobe">
+      <span class="selo">MAIS COMPLETO</span>
+      <div class="freq">3x <span>por semana</span></div>
+      <div class="aulas troca" data-v="aulas3"></div>
+      <div class="mensal"><em>R$</em><b>999,90</b><small>/mês</small></div>
+      <div class="total troca"><span data-v="parc3"></span><strong data-v="tot3"></strong></div>
+      <ul class="lista"><li>Treino personalizado</li><li>Aulas presenciais</li><li>Acompanhamento do Renan</li></ul>
+    </article>
+  </div>
+  <p class="nota">Cartão de crédito ou boleto. Os centavos são ajustados na última parcela.</p>
+
+  <section class="como sobe">
+    <div style="text-align:center"><div class="rot">Como funciona</div></div>
+    <h2>Do primeiro treino ao resultado</h2>
+    <div class="passos">
+      <div class="passo"><i>01</i><b>Conversa</b><span>Você me chama no WhatsApp e a gente entende o seu objetivo e a sua rotina.</span></div>
+      <div class="passo"><i>02</i><b>Plano</b><span>Monto o seu treino e escolhemos juntos a frequência e a duração.</span></div>
+      <div class="passo"><i>03</i><b>Evolução</b><span>Treinamos juntos e eu ajusto tudo durante o programa.</span></div>
+    </div>
+  </section>
+
+  <section class="cta sobe">
+    <h3>Vamos começar?</h3>
+    <p>Não precisa ser perfeito. Só precisa ser constante.</p>
+    <a class="botao" href="https://wa.me/5511990243681?text=Ol%C3%A1%2C%20Renan%21%20Vim%20atrav%C3%A9s%20do%20Instagram%20e%20quero%20saber%20mais%20sobre%20a%20consultoria%20individual." target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3z"/></svg>
+      Chamar no WhatsApp
+    </a>
+    <a class="outra" href="/apresentacao/#show">Quer com nutricionista esportivo? Conheça o Projeto RV 2027 →</a>
+  </section>
+
+  <footer>Renan Vieira · Zona Norte · Gaviões da Cachoeirinha</footer>
+</main>
+<script>
+/* valores da consultoria individual (sem nutricionista), conforme o Renan cobra (16/11/26) */
+const VAL = {
+  90:  { aulas2: "24 aulas em 90 dias", aulas3: "36 aulas em 90 dias", parc2: "3 parcelas · total", tot2: "R$ 2.099,90", parc3: "3 parcelas · total", tot3: "R$ 2.999,90" },
+  180: { aulas2: "48 aulas em 180 dias", aulas3: "72 aulas em 180 dias", parc2: "6 parcelas · total", tot2: "R$ 4.199,90", parc3: "6 parcelas · total", tot3: "R$ 5.999,90" }
+};
+const chave = document.getElementById("chave");
+function mostra(d, anima) {
+  chave.classList.toggle("d180", d === 180);
+  chave.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", +b.dataset.d === d));
+  const caixas = document.querySelectorAll(".troca");
+  const troca = () => { document.querySelectorAll("[data-v]").forEach(e => e.textContent = VAL[d][e.dataset.v]); caixas.forEach(c => c.classList.remove("sai")); };
+  if (!anima) return troca();
+  caixas.forEach(c => c.classList.add("sai")); setTimeout(troca, 220);
+}
+chave.querySelectorAll("button").forEach(b => b.onclick = () => mostra(+b.dataset.d, true));
+mostra(90, false);
+/* entrada suave */
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: .12 });
+document.querySelectorAll(".sobe").forEach(el => io.observe(el));
+setTimeout(() => document.querySelectorAll(".sobe").forEach(el => el.classList.add("in")), 1200);  // garantia: nada fica apagado
+/* constelação azul ao fundo */
+(function () {
+  const c = document.getElementById("ceu"), x = c.getContext("2d"); let W, H, pts = [];
+  function tam() { const d = devicePixelRatio || 1; W = innerWidth; H = innerHeight; c.width = W * d; c.height = H * d; x.setTransform(d, 0, 0, d, 0, 0);
+    pts = Array.from({ length: Math.round(W * H / 18000) }, () => ({ x: Math.random() * W, y: Math.random() * H, vx: (Math.random() - .5) * .1, vy: (Math.random() - .5) * .1, r: Math.random() * 1.3 + .3 })); }
+  function passo() { x.clearRect(0, 0, W, H);
+    for (const p of pts) { p.x = (p.x + p.vx + W) % W; p.y = (p.y + p.vy + H) % H; }
+    for (let i = 0; i < pts.length; i++) for (let j = i + 1; j < pts.length; j++) { const a = pts[i], b = pts[j], d = Math.hypot(a.x - b.x, a.y - b.y); if (d < 120) { x.strokeStyle = `rgba(91,156,255,${.14 * (1 - d / 120)})`; x.lineWidth = .7; x.beginPath(); x.moveTo(a.x, a.y); x.lineTo(b.x, b.y); x.stroke(); } }
+    for (const p of pts) { x.fillStyle = "rgba(169,200,255,.65)"; x.beginPath(); x.arc(p.x, p.y, p.r, 0, 6.3); x.fill(); }
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches) requestAnimationFrame(passo); }
+  addEventListener("resize", tam); tam(); passo();
+})();
+</script>
+</body>
+</html>
