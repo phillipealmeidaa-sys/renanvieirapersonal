@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Consultoria individual · Renan Vieira</title>
-<meta name="description" content="Consultoria individual com o personal trainer Renan Vieira: treino presencial 2x ou 3x por semana, em programas de 90 ou 180 dias. Zona Norte, Gaviões da Cachoeirinha.">
+<meta name="description" content="Consultoria individual com o personal trainer Renan Vieira: presencial 2x ou 3x por semana, em programas de 90 ou 180 dias, ou online, com treino no app e suporte no WhatsApp. Zona Norte, Gaviões da Cachoeirinha.">
 <meta name="theme-color" content="#060a14">
 <link rel="canonical" href="https://renanvieirapersonal.com.br/consultoria/">
 <meta property="og:type" content="website">
@@ -89,6 +89,22 @@ h1 span{color:transparent;background:linear-gradient(100deg,#5b9cff,#ffffff 70%)
 .outra:hover{text-decoration:underline}
 footer{margin-top:30px;text-align:center;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted)}
 
+/* consultoria online */
+.online{margin-top:46px;position:relative;overflow:hidden;border-radius:26px;padding:34px 30px;background:linear-gradient(150deg,rgba(47,127,230,.18),rgba(255,255,255,.02) 55%);border:1px solid rgba(91,156,255,.4);box-shadow:0 30px 80px -40px rgba(47,127,230,.6)}
+.online .topo-on{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;flex-wrap:wrap}
+.online h2{font-family:var(--tit);font-style:italic;font-weight:900;text-transform:uppercase;font-size:clamp(28px,5.6vw,42px);line-height:1;margin:12px 0 10px}
+.online h2 span{color:transparent;background:linear-gradient(100deg,#5b9cff,#ffffff 70%);-webkit-background-clip:text;background-clip:text}
+.online .desc{color:var(--muted);max-width:44ch;line-height:1.6}
+.online .preco-on{text-align:right}
+.online .preco-on small{display:block;font-size:12px;letter-spacing:.2em;color:var(--azul-luz);text-transform:uppercase;margin-bottom:4px}
+.online .preco-on b{font-family:var(--tit);font-style:italic;font-weight:900;font-size:clamp(44px,8vw,58px);line-height:1}
+.online .preco-on em{font-style:normal;font-weight:700;color:var(--azul-luz);font-size:16px;vertical-align:top;margin-right:4px}
+.itens-on{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:26px 0 24px}
+.item-on{padding:16px 18px;border-radius:16px;background:rgba(6,10,20,.55);border:1px solid rgba(255,255,255,.08)}
+.item-on b{display:block;font-family:var(--tit);font-style:italic;font-weight:800;text-transform:uppercase;font-size:15px;margin-bottom:4px}
+.item-on span{font-size:13.5px;color:var(--muted);line-height:1.5}
+@media (max-width:620px){.online{padding:26px 20px}.online .preco-on{text-align:left}}
+
 .sobe{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s cubic-bezier(.16,1,.3,1)}
 .sobe.in{opacity:1;transform:none}
 @media (max-width:620px){
@@ -107,9 +123,10 @@ footer{margin-top:30px;text-align:center;font-size:11px;letter-spacing:.32em;tex
   </div>
 
   <section class="cab sobe">
-    <div class="rot">Personal trainer presencial</div>
+    <div class="rot">Presencial ou online</div>
     <h1>Consultoria <span>individual</span></h1>
     <p>Treino personalizado e acompanhado de perto, no seu ritmo, para emagrecer, ganhar massa ou viver com mais saúde.</p>
+    <p style="margin-top:10px"><a href="#online" style="color:var(--azul-luz);text-decoration:none;font-weight:600">Prefere treinar no seu horário? Veja a consultoria online ↓</a></p>
   </section>
 
   <div class="inclui sobe">
@@ -142,6 +159,25 @@ footer{margin-top:30px;text-align:center;font-size:11px;letter-spacing:.32em;tex
     </article>
   </div>
   <p class="nota">Cartão de crédito ou boleto. Os centavos são ajustados na última parcela.</p>
+
+  <section class="online sobe" id="online">
+    <div class="topo-on">
+      <div>
+        <div class="rot" style="justify-content:flex-start">Onde você estiver</div>
+        <h2>Consultoria <span>online</span></h2>
+        <p class="desc">Leve o meu método para onde você estiver: treine em casa ou na academia, no seu ritmo, com todo o meu planejamento e suporte.</p>
+      </div>
+      <div class="preco-on"><small>Investimento</small><b><em>R$</em>129,90</b></div>
+    </div>
+    <div class="itens-on">
+      <div class="item-on"><b>Treino 100% personalizado</b><span>Montado do zero, respeitando os seus objetivos, a sua rotina e os seus limites.</span></div>
+      <div class="item-on"><b>Flexibilidade total</b><span>Escolha treinar em casa ou na academia.</span></div>
+      <div class="item-on"><b>Treino no app com vídeos</b><span>Acesse o seu plano de forma organizada e veja a execução certa de cada exercício.</span></div>
+      <div class="item-on"><b>Feedbacks semanais</b><span>Análise da sua evolução e ajustes no plano para garantir o progresso.</span></div>
+      <div class="item-on"><b>Suporte VIP no WhatsApp</b><span>Tire suas dúvidas direto comigo.</span></div>
+    </div>
+    <a class="botao" href="https://wa.me/5511990243681?text=Ol%C3%A1%2C%20Renan%21%20Vim%20atrav%C3%A9s%20do%20Instagram%20e%20quero%20saber%20mais%20sobre%20a%20consultoria%20online." target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3z"/></svg> Quero a consultoria online</a>
+  </section>
 
   <section class="como sobe">
     <div style="text-align:center"><div class="rot">Como funciona</div></div>
